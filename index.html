@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap">
+    <link rel="shortcut icon" href="./images/icons/happines.png" type="image/png"> 
+    <title>Tamagochi game 2</title>
+</head>
+<body>
+  <div class="selector-area" id="selector-area">
+    <h1 class="game-title">Tamagochi game v 2.0</h1>
+    <h2 class="game-subtitle">Choose difficulty</h2>
+    <select class="selector" id="difficulty-select">
+      <option value="easy">Easy</option>
+      <option value="hard">Hard</option>
+      <option value="ninja">Ninja</option>
+    </select>
+    <button class="start-btn" id="start">Start</button>
+    <div class="start-cat"></div>
+  </div>
+  <div class="hiden-game" id="game">
+  <div class="background" id="background">
+    <div class="screen">
+    <div class="room"><div class="pet-normal" id ="pet"></div></div>
+    </div>
+    <div class="btn-panel">
+        <button class="action-btn" id="food-btn" type="button"><img src="images/icons/food.png" alt="food-btn"></button>
+        <button class="action-btn" id="clean-btn" type="button"><img src="images/icons/clean.png" alt="clean-btn"></button>
+        <button class="action-btn" id ="happy-btn" type="button"><img src="images/icons/happines.png" alt="happy-btn"></button>
+        <button class="action-btn" id ="doctor-btn" type="button"><img src="images/icons/doctor.svg" alt="doctor-btn"></button>
+        <button class="action-btn" id ="bar-btn" type="button"><img src="images/icons/bar.svg" alt="bar-btn"></button>
+        <button class="action-btn" id ="work-btn" type="button"><img src="images/icons/work.svg" alt="work-btn"></button>
+        <button class="action-btn" id ="buy-btn" type="button"><img src="images/icons/buy.svg" alt="buy-btn"></button>
+        <button class="action-btn" id ="business-btn" type="button"><img src="images/icons/business.svg" alt="business-btn"></button>
+       </div>
+    <div class="panel">
+        <span class="title">Diary</span>
+        <span class="info" id="name"></span>
+        <span class="info" id="difficulty"></span>
+        <span class="info" id="lifetime"></span>
+        <div class="live-lvl"><img class="img" src="images/icons/food.png" alt="food-level"><span id="food"></span></div>
+        <div class="live-lvl"><img class="img" src="images/icons/clean.png" alt="clean-level"><span id="clean"></span></div>
+        <div class="live-lvl"><img class="img" src="images/icons/happines.png" alt="happy-level"><span id="happy"></span></div>
+        <div class="live-lvl"><img class="img" src="images/icons/health.png" alt="health-level"><span id="health"></span></div>
+        <div class="live-lvl"><img class="img" src="images/icons/social.svg" alt="social-level"><span id="social"></span></div>
+        <div class="live-lvl"><img class="img" src="images/icons/money.svg" alt="money-level"><span id="money"></span></div>
+       </div>
+    <div class="menu" id="menu">
+        <span class="menu-title" id="menu-title"></span>
+        <ul class="menu-panel">
+          <li><button class="btn" id="greeting-btn" type="button">Name</button></li>
+          <li><button class="btn" id="restart-btn" type="button">Restart</button></li>
+          <li><button class="btn" id="rules-btn" type="button">Rules</button></li>
+          <li><button class="btn" id="about-btn" type="button">About</button></li>
+        </ul>
+    </div>
+  </div>
+</div> 
+   <script src="JS/pet.js"></script>
+   <script src="JS/script.js"></script>
+</body>
+</html>

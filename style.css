@@ -1,0 +1,236 @@
+body {
+    margin: 0 auto;
+}
+
+.selector-area {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    height: 616px;
+    background-image: url(images/background.jpg)
+}
+
+.selector-area-hiden {
+    display: none;
+}
+
+.selector {
+    width: 240px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.start-btn {
+    border: none;
+    font-size: 30px;
+    color: #F5F5F5;
+    background-color: #0000CD;
+    cursor: pointer;
+}
+
+.start-btn:hover {
+    border-radius: 10px;
+    background-color: #00008B;
+}
+
+.game-title {
+    margin: 0 auto;
+    width: 400px;
+    text-align: center;
+    background-color: #008000;
+}
+
+.game-subtitle {
+    margin: 0 auto;
+    width: 200px;
+    text-align: center;
+    background-color: #0000FF;
+}
+
+.start-cat {
+    width: 140px;
+    height: 132px;
+    background-image: url(images/cat/start.png);
+}
+
+.hiden-game {
+    display: none;
+}
+
+.background {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 615px;
+    font-family: Indie Flower, sans-serif;
+    background-image: url(images/background.jpg);
+}
+
+.screen {
+    display: flex;
+    justify-content: center;
+    height: 580px;
+    width: 640px;
+    background-image: url(images/screen.jpg);
+}
+
+.room {
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    width: 500px;
+    background-image: url(images/room.jpg);
+}
+
+.pet-normal {
+    margin-top: 135px;
+    height: 137px;
+    width: 159px;
+    background-image: url(images/cat/normal.png);
+}
+
+.pet-normal:hover {
+    height: 137px;
+    width: 159px;
+    background-image: url(images/cat/anims/caress.gif);
+}
+
+.pet-death {
+    margin-top: 135px;
+    height: 132px;
+    width: 159px;
+    background-image: url(images/cat/dead.png);
+}
+
+.btn-panel {
+    margin-left: -100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 580px;
+    width: 100px;
+    background-color: #000;
+}
+
+.panel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 605px;
+    width: 160px;
+    background-color: #F5F5F5;
+}
+
+.title {
+    font-size: 50px;
+    border-bottom: 2px solid #000;
+}
+
+.info {
+    color: #0000FF;
+    font-size: 25px;
+    border-bottom: 1px solid #000;
+}
+
+.live-lvl {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 25px;
+    width: 110px;
+    color: #0000FF;
+}
+
+.img {
+    width: 50px;
+    height: 50px;
+}
+
+.action-btn {
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+    border: none;
+    background-color: #0000FF;
+}
+
+.eat-action {
+    margin-top: 135px;
+    height: 174px;
+    width: 190px;
+    background-image: url(images/cat/anims/eat.gif);
+}
+
+.wash-action {
+    margin-top: 135px;
+    height: 250px;
+    width: 200px;
+    background-image: url(images/cat/anims/washUp.gif);
+}
+
+.dance-action {
+    margin-top: 135px;
+    height: 154px;
+    width: 180px;
+    background-image: url(images/cat/anims/dance.gif);
+}
+
+.btn {
+    font-family: Indie flower, sans-serif;
+    font-size: 25px;
+    width: 110px;
+    height: 40px;
+    color: #fff;
+    background-color: #008000;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.menu-panel {
+    margin: 0;
+    list-style: none;
+    display: none;
+}
+
+.menu-title {
+    font-size: 50px;
+    cursor: pointer;
+}
+
+.menu-title::before {
+    margin-left: -60px;
+    display: flex;
+    justify-content: center;
+    content: '▶ Menu';
+    font-size: 80%;
+    width: 160px;
+    background-color: #FFA07A;
+}
+
+.menu.open .menu-title::before {
+    display: flex;
+    justify-content: center;
+    content: '▼ Menu ';
+    border-bottom: 2px solid #000;
+    background-color: #F5F5F5;
+    width: 200px;
+}
+
+.menu.open ul {
+    margin-left: -60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 522px;
+    width: 160px;
+    background-color: #F5F5F5;
+}
